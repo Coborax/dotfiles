@@ -44,6 +44,8 @@ git clone --depth 1 "https://github.com/AstroNvim/AstroNvim" "$HOME/.config/nvim
 # Create config symlinks
 echo "Creating configurations symlinks..."
 ln -s "$PWD/alacritty" "$HOME/.config"
+ln -s "$PWD/skhd" "$HOME/.config"
+ln -s "$PWD/yabai" "$HOME/.config"
 ln -s "$PWD/fish" "$HOME/.config"
 
 rm -r "$HOME/.config/nvim/lua/user" # Make sure user folder does not exist
