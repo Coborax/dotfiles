@@ -20,7 +20,7 @@ If you want to try out my configurations you can clone this repo, and symlink th
 
 ```bash
 git clone https://github.com/Coborax/dotfiles
-ln -s ./dotfiles/alacritty ~/.config/
+ln -s <PATH_TO_DOTFILES_REPO>/alacritty ~/.config
 ```
 For setting up a new machine with all of my settings run the following commands
 
