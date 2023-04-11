@@ -18,7 +18,7 @@ My dotfiles contain configurations for the following
 
 ## Installation
 
-If you want to try out my configurations you can clone this repo, and symlink the configurations you want to try out.
+If you want to try out my configurations you can clone this repo, and symlink the configurations you want to try out. (See install.sh for more examples)
 
 ```bash
 git clone https://github.com/Coborax/dotfiles
