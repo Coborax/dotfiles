@@ -26,5 +26,6 @@ For setting up a new machine with all of my settings run the following commands
 
 ```bash
 git clone https://github.com/Coborax/dotfiles
-sh ./dotfiles/install.sh
+cd dotfiles/
+sh install.sh
 ```
