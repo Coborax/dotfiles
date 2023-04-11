@@ -10,8 +10,10 @@ My personal macOS configuration files
 My dotfiles contain configurations for the following
 - Nvim (AstroVim) (IDE)
 - Alacritty (Terminal Emulator)
+- fish (Shell)
 - Yabai (Window Manager)
 - skhd (Global Shortcuts)
+- SketchyBar ()
 
 
 ## Installation
@@ -29,3 +31,7 @@ git clone https://github.com/Coborax/dotfiles
 cd dotfiles/
 sh install.sh
 ```
+
+## Acknowledgements
+
+ - [SketchyBar Config from FelixKratz](https://github.com/FelixKratz/dotfiles#sketchybar-setup)
