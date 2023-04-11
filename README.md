@@ -13,7 +13,7 @@ My dotfiles contain configurations for the following
 - fish (Shell)
 - Yabai (Window Manager)
 - skhd (Global Shortcuts)
-- SketchyBar ()
+- SketchyBar (Status bar)
 
 
 ## Installation
