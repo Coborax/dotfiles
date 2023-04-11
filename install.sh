@@ -34,8 +34,8 @@ curl -L https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v1.0.
 
 # Setup fish shell
 echo "Setting up fish as shell"
-#echo "/opt/homebrew/bin/fish" >> /etc/shells
-# chsh -s /opt/homebrew/bin/fish
+echo "/opt/homebrew/bin/fish" >> /etc/shells
+chsh -s /opt/homebrew/bin/fish
 
 # Install AstroVim
 echo "Installing AstroVim"
