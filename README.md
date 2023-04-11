@@ -29,6 +29,7 @@ For setting up a new machine with all of my settings run the following commands
 ```bash
 git clone https://github.com/Coborax/dotfiles
 cd dotfiles/
+git submodule update --init --recursive
 sh install.sh
 ```
 
