@@ -47,6 +47,7 @@ ln -s "$PWD/alacritty" "$HOME/.config"
 ln -s "$PWD/skhd" "$HOME/.config"
 ln -s "$PWD/yabai" "$HOME/.config"
 ln -s "$PWD/fish" "$HOME/.config"
+ln -s "$PWD/sketchybar" "$HOME/.config"
 
 rm -r "$HOME/.config/nvim/lua/user" # Make sure user folder does not exist
 ln -s "$PWD/astronvim_config" "$HOME/.config/nvim/lua/user"
