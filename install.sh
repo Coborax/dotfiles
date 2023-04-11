@@ -92,7 +92,8 @@ if [[ $fish == "y" ]]; then
     ln -s "$PWD/fish" "$HOME/.config"
 fi
 if [[ $nvim == "y" ]]; then
-    brew install neovim
+    rm -r "$HOME/.config/nvim/lua/user" # Make sure user folder does not exist
+    ln -s "$PWD/astronvim_config" "$HOME/.config/nvim/lua/user"
 fi
 if [[ $yabai == "y" ]]; then
     ln -s "$PWD/yabai" "$HOME/.config"
@@ -102,10 +103,6 @@ if [[ $skhd == "y" ]]; then
 fi
 if [[ $sketchybar == "y" ]]; then
     ln -s "$PWD/sketchybar" "$HOME/.config"
-fi
-if [[ $nvim == "y" ]]; then
-    rm -r "$HOME/.config/nvim/lua/user" # Make sure user folder does not exist
-    ln -s "$PWD/astronvim_config" "$HOME/.config/nvim/lua/user"
 fi
 
 echo "Starting Services"
