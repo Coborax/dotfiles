@@ -17,6 +17,9 @@ read sketchybar
 echo "Install skhd? (y/n)"
 read skhd
 
+echo "Install Spicetify (y/n)"
+read spicetify 
+
 # Install Brew
 echo "Installing Brew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -52,6 +55,9 @@ if [[ $nvim == "y" ]]; then
     brew install nvim 
 fi
 
+# Install Apps
+brew install neofetch
+
 
 # Install Brew Casks
 echo "Installing Brew Casks..."
@@ -83,6 +89,10 @@ if [[ $nvim == "y" ]]; then
 fi
 
 
+if [[ $spicetify == "y" ]]; then
+    echo "Installing Spicetcurl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.sh | sh"
+fi
+
 # Create config symlinks
 echo "Creating configurations symlinks..."
 if [[ $alacritty == "y" ]]; then
@@ -103,6 +113,11 @@ if [[ $skhd == "y" ]]; then
 fi
 if [[ $sketchybar == "y" ]]; then
     ln -s "$PWD/sketchybar" "$HOME/.config"
+fi
+if [[ $spicetify == "y" ]]; then
+    rm -r "$HOME/.config/spicetify/Extensions"
+    ln -s "$PWD/spicetify/catppuccin-mocha" "$HOME/.config/spicetify/Themes"
+    ln -s "$PWD/spicetify/js" "$HOME/.config/spicetify/Extensions"
 fi
 
 echo "Starting Services"

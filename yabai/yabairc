@@ -7,12 +7,16 @@ yabai -m config left_padding 10
 yabai -m config right_padding 10
 yabai -m config window_gap 10
 
+# yabai -m config window_border on 
+#
+# yabai -m active_window_border_color 0xff89b4fa 
+# yabai -m normal_window_border_color 0xff313244
 # Window Opacity
 # yabai -m config window_opacity on
 # yabai -m config active_window_opacity 1.0
 # yabai -m config normal_window_opacity 0.9
 
 # Sketchybar Signals
-yabaiignal --add event=window_destroyed action="sketchybar --trigger windows_on_spaces"
+yabai -m signal --add event=window_focused action="sketchybar --trigger window_focus"
 yabai -m signal --add event=window_created action="sketchybar --trigger windows_on_spaces"
 yabai -m signal --add event=window_destroyed action="sketchybar --trigger windows_on_spaces"
