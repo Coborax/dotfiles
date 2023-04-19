@@ -7,3 +7,6 @@
 [submodule "spicetify"]
 	path = spicetify
 	url = https://github.com/catppuccin/spicetify
+[submodule "fish/fishline"]
+	path = fish/fishline
+	url = https://github.com/0rax/fishline.git/
